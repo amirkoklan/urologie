@@ -24,8 +24,18 @@
         <link rel="stylesheet" href="css/jquery.ui.theme.css"/> 
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="css/media-queries.css"/>                    
-        <link rel="stylesheet" href="css/custom.css"/>                     
-
+        <link rel="stylesheet" href="css/custom.css"/>
+        <script src="js/jquery-1.8.2.min.js"></script>
+        <script>
+            $(document).ready(
+                    function() {
+                        $("#header").load("header.html");
+                    });
+            $(document).ready(function() {
+                $("#footer-wrap").load("footer.html");
+            }
+            );
+        </script>
         <!-- Pingback URL -->
 
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -40,66 +50,6 @@
         <div id="wrapper">
             <!-- Starting Header of the website -->
                        <header id="header">
-
-                <!-- Website Logo Place -->
-                <div id="logo-container">
-                    <a href="index.html" class="logo"  title="Site Logo">
-                        <img src="images/logo.png" alt="Health Press">
-                        <span class="tagline">Dr. M. Zamani</span>
-                    </a>
-                </div>
-
-                <ul class="social-nav">                                        
-                    <!-- <li class="facebook"><a target="_blank" href="#"></a></li>
-                    <li class="twitter"><a target="_blank" href="#"></a></li>
-                    <li class="skype"><a target="_blank" href="#"></a></li>																	
-                    <li class="flickr"><a target="_blank" href="#"></a></li>																	
-                    <li class="google"><a target="_blank" href="#"></a></li>																
-                    <li class="linkedin"><a target="_blank" href="#"></a></li>															
-                    <li class="rss"><a target="_blank" href="#"></a></li> -->
-                    <li class="phone"><span>07252-6877</span></li>
-                </ul>
-
-
-                <nav class="main-nav clearfix">
-
-                    <!-- MAIN NAVIGATION -->
-                    <div class="menu-div">
-                        <ul>
-                            <li>
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="diagnostic.html">Services</a>
-                                <ul>
-                                    <li><a href="diagnostic.html">Diagnostic</a></li>
-                                    <li><a href="ontology.html">ontology</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="single-gallery.html">Gallerie</a>
-                                <ul>
-                                    <li><a href="single-gallery.html">Gallery Single</a></li>
-                                    <li><a href="single-gallery.html">Gallery Single</a></li>
-                                    <li><a href="single-gallery.html">Gallery Single</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="impressum.html">Sprechzeiten</a>
-                            </li>
-                            <li><a href="contact.html">Kontakt</a></li>
-                            <li><a href="impressum.html">Impressum</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- GLOBAL SEARCH -->
-                    <form method="get" action="#" id="topsearch">
-                        <p>
-                            <input type="text" placeholder="Search" name="s" id="tsearch">
-                            <input type="submit" id="topsubmit" value="">
-                        </p>
-                    </form>
-                </nav>
             </header><!-- ending of header of the website -->
 
                     
@@ -208,53 +158,11 @@
                 </div>                                                          
 
             </div><!-- end of container -->
-          <div id="footer-wrap">
-
-                <footer class="clearfix">
-
-                    <section class="footer-widget">
-                        <section class="widget">			    
-                            <h3>
-                                <a href="index.html"><img src="images/footer-logo.png" alt="HealthPress"></a>
-                            </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis adipiscing id nulla vel lorem dapibus fringilla eget non felis, porttitor lectus.</p>
-                            <a href="#" class="readmore">Read more</a>
-                        </section>													
-                    </section>
-
-                    <section class="footer-widget">
-                        <section class="widget">
-                        </section>                                      
-                    </section>
-
-                    <section class="footer-widget">
-                        <section class="widget">
-                        </section>
-                    </section>
-
-                    <section class="footer-widget">
-                        <section class="widget">
-                            <h3 class="title">Lage</h3>   
-                            <p>Melanchthonstraße 74<br/>75015 Bretten</p>
-                            <p><span>Ph:</span> 07252-6877</p>
-                            <p><span>Email:</span> <a href="mailto:info@urologie-bretten.de">info@urologie-bretten.de</a></p>               
-                        </section>                                     
-                    </section>
-
-                </footer><!-- end of #bottom -->                                                       		                                
+          <div id="footer-wrap">                                                  		                                
 
             </div><!-- footer-wrap -->
-
-            <div id="footer-bottom-wrapper">
-                <div id="footer-bottom">
-                    <p class="copyrights">© Copyright 2012. All Rights Reserved by Urologie Bretten.</p>
-
-                </div><!-- footer-bottom -->
-            </div>
-
         </div><!-- End of Wrapper Div -->
 
-        <script src="js/jquery-1.8.2.min.js"></script>
         <script src="js/prettyPhoto/js/jquery.prettyPhoto.js"></script>                
         <script src="js/jquery.validate.min.js"></script>
         <script src="js/jquery.form.js"></script>

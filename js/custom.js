@@ -203,7 +203,7 @@ jQuery(document).ready(function(){
 	}*/
 
     // Twitter Fetcher Target Code
-    twitterFetcher.fetch('353252568291504128', 'twitter_update_list', 1, true, false, true, dateFormatter, false);
+   // twitterFetcher.fetch('353252568291504128', 'twitter_update_list', 1, true, false, true, dateFormatter, false);
 
 
     /* ---------------------------------------------------- */
